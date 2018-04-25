@@ -26,7 +26,7 @@ class ArmyController extends Controller
         $unit = Archer::find($unitId);
         $army = Army::find(1);
 
-        $army->addUnit($unit);
+        $unit->addUnit($unit);
         $unit->occupated_id = $army->id;
         $unit->save();
 

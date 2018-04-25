@@ -18,7 +18,7 @@ abstract class Unit extends Model
      */
     function addUnit(Unit $unit)
     {
-        throw new Exception('Класс'.get_class($this).'не поддерживает операции добавления');
+        throw new Exception('Класс '.get_class($this).' не поддерживает операции добавления');
     }
 
     /**
@@ -27,7 +27,7 @@ abstract class Unit extends Model
      */
     function removeUnit(Unit $unit)
     {
-        throw new Exception('Класс'.get_class($this).'не поддерживает операции удаления');
+        throw new Exception('Класс '.get_class($this).' не поддерживает операции удаления');
     }
 
     abstract function bombardStrength();
