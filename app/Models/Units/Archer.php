@@ -2,10 +2,12 @@
 
 namespace App;
 
-use App\Models\Abstractive\Unit;
+use App\Models\Abstracts\Unit;
 
 class Archer extends Unit
 {
+    protected $table = 'archers';
+
     private $units = [];
 
     public function addUnit(Unit $unit)

@@ -2,7 +2,7 @@
 
 namespace App\Models\Units;
 
-use App\Models\Abstractive\Unit;
+use App\Models\Abstracts\Unit;
 
 
 class Army extends Unit
