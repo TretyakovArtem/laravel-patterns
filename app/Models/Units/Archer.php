@@ -8,8 +8,6 @@ class Archer extends Unit
 {
     protected $table = 'archers';
 
-    private $units = [];
-
     public function addUnit(Unit $unit)
     {
         if (in_array($unit, $this->units, true)) {
@@ -26,11 +24,6 @@ class Archer extends Unit
 
     function bombardStrength()
     {
-        $ret = 0;
-
-        foreach ($this->units as $unit) {
-            $ret += $unit->bombardStrength();
-        }
-        return $ret;
+        return 4;
     }
 }
