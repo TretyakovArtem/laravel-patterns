@@ -15,6 +15,7 @@ class CreateArchersTable extends Migration
     {
         Schema::create('archers', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('occupated_id');
             $table->timestamps();
         });
     }

@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1', 'namespace' => 'Api\V1'], function () {
     Route::post('employees/upload', 'EmployeeController@upload');
     Route::get('armies', 'ArmyController@index');
+    Route::get('armies/take/{unitId}', 'ArmyController@take');
 });

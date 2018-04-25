@@ -21,9 +21,9 @@ class ArmyController extends Controller
     }
 
 
-    public function take($id)
+    public function take($unitId)
     {
-        $unit = Archer::find($id);
+        $unit = Archer::find($unitId);
         $army = Army::find(1);
 
         $army->addUnit($unit);

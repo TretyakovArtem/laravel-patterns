@@ -15,6 +15,7 @@ class CreateArmiesTable extends Migration
     {
         Schema::create('armies', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('strength');
             $table->timestamps();
         });
     }
