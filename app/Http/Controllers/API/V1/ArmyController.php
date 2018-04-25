@@ -31,5 +31,6 @@ class ArmyController extends Controller
         $unit->save();
 
         $army->strength = $army->bombardStrength();
+        $army->save();
     }
 }
