@@ -6,6 +6,7 @@
  * Time: 16:28
  */
 namespace App\Models\Abstracts;
+
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 
